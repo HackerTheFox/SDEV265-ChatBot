@@ -1,0 +1,392 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>PDF Chatbot</title>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>-->
+<!--    <style>-->
+<!--        /* Previous CSS remains the same */-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>PDF Chatbot</h1>-->
+<!--    <input type="hidden" id="session-id" value="{{ session_id }}">-->
+<!--    <div id="chat-container">-->
+<!--        <div id="chat-messages"></div>-->
+<!--        <div id="user-input">-->
+<!--            <input type="text" id="message" placeholder="Type your message...">-->
+<!--            <button onclick="sendMessage()">Send</button>-->
+<!--            <button onclick="clearHistory()">Clear History</button>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <script>-->
+<!--        // function sendMessage() {-->
+<!--        //     const messageInput = document.getElementById('message');-->
+<!--        //     const chatMessages = document.getElementById('chat-messages');-->
+<!--        //     const userMessage = messageInput.value.trim();-->
+<!--        //-->
+<!--        //     if (!userMessage) return;-->
+<!--        //-->
+<!--        //     // Display user message-->
+<!--        //     const userMessageEl = document.createElement('div');-->
+<!--        //     userMessageEl.className = 'message user-message';-->
+<!--        //     userMessageEl.textContent = userMessage;-->
+<!--        //     chatMessages.appendChild(userMessageEl);-->
+<!--        //-->
+<!--        //     // Clear input-->
+<!--        //     messageInput.value = '';-->
+<!--        //-->
+<!--        //     // Send to backend-->
+<!--        //     axios.post('/chat', {-->
+<!--        //         message: userMessage,-->
+<!--        //         session_id: document.getElementById('session-id').value-->
+<!--        //     })-->
+<!--        //     .then(response => {-->
+<!--        //         const botMessageEl = document.createElement('div');-->
+<!--        //         botMessageEl.className = 'message bot-message';-->
+<!--        //         botMessageEl.textContent = response.data.message;-->
+<!--        //-->
+<!--        //         // Add sources if available-->
+<!--        //         if (response.data.sources && response.data.sources.length > 0) {-->
+<!--        //             const sourcesEl = document.createElement('div');-->
+<!--        //             sourcesEl.className = 'sources';-->
+<!--        //             sourcesEl.innerHTML = '<strong>Sources:</strong><br>' +-->
+<!--        //                 response.data.sources.map(source =>-->
+<!--        //                     `${source.file} (Page ${source.page})`-->
+<!--        //                 ).join('<br>');-->
+<!--        //             botMessageEl.appendChild(sourcesEl);-->
+<!--        //         }-->
+<!--        //-->
+<!--        //         chatMessages.appendChild(botMessageEl);-->
+<!--        //         chatMessages.scrollTop = chatMessages.scrollHeight;-->
+<!--        //     })-->
+<!--        //     .catch(error => {-->
+<!--        //         const errorMessageEl = document.createElement('div');-->
+<!--        //         errorMessageEl.className = 'message bot-message';-->
+<!--        //         errorMessageEl.textContent = 'Error: Unable to send message';-->
+<!--        //         chatMessages.appendChild(errorMessageEl);-->
+<!--        //     });-->
+<!--        // }-->
+<!--        //-->
+<!--        // function clearHistory() {-->
+<!--        //     axios.post('/clear_history')-->
+<!--        //     .then(response => {-->
+<!--        //         const chatMessages = document.getElementById('chat-messages');-->
+<!--        //         chatMessages.innerHTML = '';-->
+<!--        //-->
+<!--        //         // Update session ID-->
+<!--        //         if (response.data.session_id) {-->
+<!--        //             document.getElementById('session-id').value = response.data.session_id;-->
+<!--        //         }-->
+<!--        //     })-->
+<!--        //     .catch(error => {-->
+<!--        //         console.error('Error clearing history:', error);-->
+<!--        //     });-->
+<!--        // }-->
+<!--        //-->
+<!--        // // Allow sending message with Enter key-->
+<!--        // document.getElementById('message').addEventListener('keypress', function(e) {-->
+<!--        //     if (e.key === 'Enter') {-->
+<!--        //         sendMessage();-->
+<!--        //     }-->
+<!--        // });-->
+<!--    </script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.ivytech.edu/favicon.ico" type="image/x-icon">
+
+
+    <title>Ivy Tech Chatbot</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        :root {
+            --ivy-green: #006341;
+            --ivy-light-green: #84BD00;
+            --ivy-white: #FFFFFF;
+            --ivy-gray: #F4F4F4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--ivy-gray);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--ivy-green);
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            height: 40px;
+            object-fit: contain;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        .chat-container {
+            background-color: var(--ivy-white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .chat-header {
+            background-color: var(--ivy-green);
+            color: var(--ivy-white);
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .chat-avatar {
+            width: 40px;
+            height: 40px;
+            background-color: var(--ivy-light-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .chat-title h2 {
+            font-size: 1.2rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .chat-title p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .chat-messages {
+            height: 400px;
+            overflow-y: auto;
+            padding: 1rem;
+        }
+
+        .message {
+            max-width: 80%;
+            margin-bottom: 1rem;
+            padding: 0.75rem 1rem;
+            border-radius: 18px;
+            line-height: 1.4;
+        }
+
+        .bot-message {
+            background-color: var(--ivy-gray);
+            color: #333;
+            align-self: flex-start;
+        }
+
+        .user-message {
+            background-color: var(--ivy-green);
+            color: var(--ivy-white);
+            margin-left: auto;
+        }
+
+        .chat-input {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background-color: var(--ivy-gray);
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .chat-input input {
+            flex-grow: 1;
+            padding: 0.75rem 1rem;
+            border: 1px solid #ccc;
+            border-radius: 24px;
+            font-size: 1rem;
+        }
+
+        .chat-input button {
+            background-color: var(--ivy-green);
+            color: var(--ivy-white);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-left: 0.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .chat-input button:hover {
+            background-color: var(--ivy-light-green);
+        }
+
+        .powered-by {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        .sources {
+            font-size: 0.8em;
+            margin-top: 0.5rem;
+            color: #666;
+        }
+
+        #clear-history {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            margin-left: 0.5rem;
+
+
+        }
+
+        #clear-history:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://www.ivytech.edu/content/img/logos/ivy-tech-horiz-white@2x.png" alt="Ivy Tech Community College" class="logo">
+        </div>
+    </header>
+
+    <main>
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="chat-avatar">Ivy</div>
+                <div class="chat-title">
+                    <h2>Chat Bot</h2>
+                    <p>Always here to help</p>
+                </div>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <!-- Messages will be dynamically added here -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message" placeholder="Type your message..." aria-label="Type your message">
+                <button onclick="sendMessage()" aria-label="Send message">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+            <button id="clear-history" onclick="clearHistory()">Clear History</button>
+            <p class="powered-by">Powered by Team Green</p>
+        </div>
+    </main>
+
+    <input type="hidden" id="session-id" value="{{ session_id }}">
+
+    <script>
+        function sendMessage() {
+            const messageInput = document.getElementById('message');
+            const chatMessages = document.getElementById('chat-messages');
+            const userMessage = messageInput.value.trim();
+
+            if (!userMessage) return;
+
+            // Display user message
+            const userMessageEl = document.createElement('div');
+            userMessageEl.className = 'message user-message';
+            userMessageEl.textContent = userMessage;
+            chatMessages.appendChild(userMessageEl);
+
+            // Clear input
+            messageInput.value = '';
+
+            // Send to backend
+            axios.post('/chat', {
+                message: userMessage,
+                session_id: document.getElementById('session-id').value
+            })
+            .then(response => {
+                const botMessageEl = document.createElement('div');
+                botMessageEl.className = 'message bot-message';
+                botMessageEl.textContent = response.data.message;
+
+                // Add sources if available
+                if (response.data.sources && response.data.sources.length > 0) {
+                    const sourcesEl = document.createElement('div');
+                    sourcesEl.className = 'sources';
+                    sourcesEl.innerHTML = '<strong>Sources:</strong><br>' +
+                        response.data.sources.map(source =>
+                            `${source.file} (Page ${source.page})`
+                        ).join('<br>');
+                    botMessageEl.appendChild(sourcesEl);
+                }
+
+                chatMessages.appendChild(botMessageEl);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            })
+            .catch(error => {
+                const errorMessageEl = document.createElement('div');
+                errorMessageEl.className = 'message bot-message';
+                errorMessageEl.textContent = 'Error: Unable to send message';
+                chatMessages.appendChild(errorMessageEl);
+            });
+        }
+
+        function clearHistory() {
+            axios.post('/clear_history')
+            .then(response => {
+                const chatMessages = document.getElementById('chat-messages');
+                chatMessages.innerHTML = '';
+
+                // Update session ID
+                if (response.data.session_id) {
+                    document.getElementById('session-id').value = response.data.session_id;
+                }
+            })
+            .catch(error => {
+                console.error('Error clearing history:', error);
+            });
+        }
+
+        // Allow sending message with Enter key
+        document.getElementById('message').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+

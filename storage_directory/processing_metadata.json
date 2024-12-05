@@ -1,0 +1,607 @@
+{
+  "course_pdfs\\CPIN239 - Systems Analysis and Design.pdf": {
+    "hash": "f4dd5b0d1b38ceb570904ba50a65ad78",
+    "last_processed": "2024-12-04T19:24:37.478464",
+    "num_chunks": 9
+  },
+  "course_pdfs\\CPIN269 - Information Technology Project Management.pdf": {
+    "hash": "83c738dec368e55a97a641085ef36036",
+    "last_processed": "2024-12-04T19:24:37.503590",
+    "num_chunks": 9
+  },
+  "course_pdfs\\CPIN270 - Workforce Preparation Comptia ProjectPlus Certification.pdf": {
+    "hash": "7b0e2543bf2251d982695a4b050a3244",
+    "last_processed": "2024-12-04T19:24:37.519174",
+    "num_chunks": 6
+  },
+  "course_pdfs\\CPIN279 - Information Technology Capstone.pdf": {
+    "hash": "8ab5d2a3f41912f8361909f713397e64",
+    "last_processed": "2024-12-04T19:24:37.539769",
+    "num_chunks": 7
+  },
+  "course_pdfs\\CPIN280 - Computing and Informatics CO-OP Internship Externship.pdf": {
+    "hash": "f10f3ac0412c48911ad4a8e3ca2f5283",
+    "last_processed": "2024-12-04T19:24:37.560081",
+    "num_chunks": 7
+  },
+  "course_pdfs\\CSCI101 - Computer Science I.pdf": {
+    "hash": "17d30acd12e0fba47f524a802fffef89",
+    "last_processed": "2024-12-04T19:24:37.602635",
+    "num_chunks": 22
+  },
+  "course_pdfs\\CSCI102 - Computer Science II.pdf": {
+    "hash": "4f53b34510da43dd38ae6c85f37e178f",
+    "last_processed": "2024-12-04T19:24:37.628516",
+    "num_chunks": 9
+  },
+  "course_pdfs\\CSCI105 - Discrete Logic for Computers.pdf": {
+    "hash": "9c1a1ff13083697c09cdc11596758007",
+    "last_processed": "2024-12-04T19:24:37.652682",
+    "num_chunks": 10
+  },
+  "course_pdfs\\CSCI201 - Computer Science II.pdf": {
+    "hash": "b89f4e5b2aa90af88a04bc2e62d1e7ca",
+    "last_processed": "2024-12-04T19:24:37.689770",
+    "num_chunks": 19
+  },
+  "course_pdfs\\CSCI202 - Data Structures.pdf": {
+    "hash": "60b5b7a632fa302d05070b80e3b339d2",
+    "last_processed": "2024-12-04T19:24:37.762736",
+    "num_chunks": 17
+  },
+  "course_pdfs\\CSCI205 - Computer Organization and Architecture.pdf": {
+    "hash": "c7e338102e536aaac5b140cacc2e55f4",
+    "last_processed": "2024-12-04T19:24:37.788536",
+    "num_chunks": 9
+  },
+  "course_pdfs\\CSCI210 - Database Systems.pdf": {
+    "hash": "bce0206c20b3c2dbd8f8539df1ec336f",
+    "last_processed": "2024-12-04T19:24:37.819110",
+    "num_chunks": 11
+  },
+  "course_pdfs\\CSCI279 - Capstone Course.pdf": {
+    "hash": "6ed1ce05b572f2b576a9322d4b5abaa9",
+    "last_processed": "2024-12-04T19:24:37.842157",
+    "num_chunks": 7
+  },
+  "course_pdfs\\CSIA105 - Introduction to Cyber Security and Information Assurance.pdf": {
+    "hash": "24bcf03f4bd517de1226caee5258d9e5",
+    "last_processed": "2024-12-04T19:24:37.870208",
+    "num_chunks": 9
+  },
+  "course_pdfs\\CSIA106 - Workforce Preparation CompTIA SecurityPlus Certification .pdf": {
+    "hash": "bb6b33d6313cdb0704ccab19c059bfc7",
+    "last_processed": "2024-12-04T19:24:37.887221",
+    "num_chunks": 6
+  },
+  "course_pdfs\\CSIA115 - Cyber Ops.pdf": {
+    "hash": "0c6f1f02033c7875a942cb5f9b9f8ae0",
+    "last_processed": "2024-12-04T19:24:37.912551",
+    "num_chunks": 10
+  },
+  "course_pdfs\\CSIA135 - Digital Forensics.pdf": {
+    "hash": "fa754514a41cd38a13affd6469aa8f16",
+    "last_processed": "2024-12-04T19:24:37.937053",
+    "num_chunks": 7
+  },
+  "course_pdfs\\CSIA210 - Network Protocol Analysis.pdf": {
+    "hash": "c17307c4dfaba0ef3640c7c29dc88a4f",
+    "last_processed": "2024-12-04T19:24:37.965584",
+    "num_chunks": 9
+  },
+  "course_pdfs\\CSIA215 - Perimeter Defense.pdf": {
+    "hash": "661d98973de75cda3c4f1cf37337f8e7",
+    "last_processed": "2024-12-04T19:24:37.992039",
+    "num_chunks": 9
+  },
+  "course_pdfs\\CSIA225 - Ethical Hacking.pdf": {
+    "hash": "d4442bfd28be7bd95950d2963a8343cd",
+    "last_processed": "2024-12-04T19:24:38.018030",
+    "num_chunks": 7
+  },
+  "course_pdfs\\CSIA235 - Advanced Digital Forensics.pdf": {
+    "hash": "5c91eeb34e3ea713403214583933ef04",
+    "last_processed": "2024-12-04T19:24:38.045705",
+    "num_chunks": 9
+  },
+  "course_pdfs\\CSIA245 -  Cryptography Secure Coding Theory and Application.pdf": {
+    "hash": "00cb46b3943cf94684305b9f64f96b46",
+    "last_processed": "2024-12-04T19:24:38.128822",
+    "num_chunks": 11
+  },
+  "course_pdfs\\CSIA260 - Business Continuity in an Information World.pdf": {
+    "hash": "f35a38133c5b4dab242f2e5fb25e9195",
+    "last_processed": "2024-12-04T19:24:38.166541",
+    "num_chunks": 10
+  },
+  "course_pdfs\\DBMS110 - Introduction to Data Analytics.pdf": {
+    "hash": "5c40ff39d67185a9795efb6d4f795d7f",
+    "last_processed": "2024-12-04T19:24:38.196176",
+    "num_chunks": 10
+  },
+  "course_pdfs\\DBMS130 - Data Management using Structured Query Language.pdf": {
+    "hash": "93c3d556944f6a7da46417f75231cf98",
+    "last_processed": "2024-12-04T19:24:38.226799",
+    "num_chunks": 8
+  },
+  "course_pdfs\\DBMS131 - Workforce Preparation Oracle SQL Foundations Certification.pdf": {
+    "hash": "2c8d3b95ecdfdd974d70babe97fd5565",
+    "last_processed": "2024-12-04T19:24:38.241863",
+    "num_chunks": 6
+  },
+  "course_pdfs\\DBMS160 - Data Visualization and Analysis.pdf": {
+    "hash": "85c2f2f5812412d1b7de43b13f590057",
+    "last_processed": "2024-12-04T19:24:38.268069",
+    "num_chunks": 8
+  },
+  "course_pdfs\\DBMS210 - Database Design and Development.pdf": {
+    "hash": "5e2767a79c9f7f6ca65dfc94bb221315",
+    "last_processed": "2024-12-04T19:24:38.296728",
+    "num_chunks": 7
+  },
+  "course_pdfs\\DBMS260 - Advanced Data Analytics.pdf": {
+    "hash": "54f0f453b618c751d4f84274d90fae76",
+    "last_processed": "2024-12-04T19:24:38.326661",
+    "num_chunks": 9
+  },
+  "course_pdfs\\INFM109 - Informatics Fundamentals.pdf": {
+    "hash": "82a6647337d4a6ed3f7ba6e4aa290f5b",
+    "last_processed": "2024-12-04T19:24:38.362247",
+    "num_chunks": 9
+  },
+  "course_pdfs\\INFM219 - Business Intelligence and Reporting.pdf": {
+    "hash": "1164ec1a08678bd2862a1d4c9a93c8f4",
+    "last_processed": "2024-12-04T19:24:38.404307",
+    "num_chunks": 9
+  },
+  "course_pdfs\\INFM260 - Salesforce Administration.pdf": {
+    "hash": "a775e617d5a3fdb499d3f051fc96efd6",
+    "last_processed": "2024-12-04T19:24:38.448385",
+    "num_chunks": 12
+  },
+  "course_pdfs\\INFM261 - Workforce Preparation Salesforce Administrator Certification.pdf": {
+    "hash": "7ead194c3a1442416c491e53632da2ad",
+    "last_processed": "2024-12-04T19:24:38.472399",
+    "num_chunks": 7
+  },
+  "course_pdfs\\ITSP132 - IT Support Essentials I.pdf": {
+    "hash": "a483189fbb917a165552a47af50729cc",
+    "last_processed": "2024-12-04T19:24:38.504113",
+    "num_chunks": 15
+  },
+  "course_pdfs\\ITSP134 - IT Support Essentials II.pdf": {
+    "hash": "4563db92d92557e47699dca823e725db",
+    "last_processed": "2024-12-04T19:24:38.533770",
+    "num_chunks": 13
+  },
+  "course_pdfs\\ITSP135 - Hardware Software Support.pdf": {
+    "hash": "7010b1bcd459a2b9e949c4df38c62980",
+    "last_processed": "2024-12-04T19:24:38.568421",
+    "num_chunks": 17
+  },
+  "course_pdfs\\ITSP136 - Workforce Preparation CompTIA APlus Certification.pdf": {
+    "hash": "30836712be9ef07d1e7fdc9b5604a397",
+    "last_processed": "2024-12-04T19:24:38.641708",
+    "num_chunks": 11
+  },
+  "course_pdfs\\ITSP215 - Mobile Wireless Computing Support.pdf": {
+    "hash": "02560bb84e70ebe00c291da5de6d8a58",
+    "last_processed": "2024-12-04T19:24:38.670507",
+    "num_chunks": 13
+  },
+  "course_pdfs\\ITSP216 - Workforce Preparation Certified Wireless Technology Specialist Certification.pdf": {
+    "hash": "882d8648ea6320b0b5dc17473999942c",
+    "last_processed": "2024-12-04T19:24:38.696386",
+    "num_chunks": 11
+  },
+  "course_pdfs\\ITSP225 - Help Desk Software and Technology Support.pdf": {
+    "hash": "3791d4efec9b29cc5d86f8db2d37b8e9",
+    "last_processed": "2024-12-04T19:24:38.729044",
+    "num_chunks": 8
+  },
+  "course_pdfs\\ITSP235 - Internet of Things Fundamentals.pdf": {
+    "hash": "7b8bbca9c9f979d24f09ca9d9ccb76ed",
+    "last_processed": "2024-12-04T19:24:38.763193",
+    "num_chunks": 9
+  },
+  "course_pdfs\\NETI100 - Network Communications.pdf": {
+    "hash": "b7b93e1a129ac42744ef002a7a2a915c",
+    "last_processed": "2024-12-04T19:24:38.807223",
+    "num_chunks": 8
+  },
+  "course_pdfs\\NETI104 - Introduction to Networking.pdf": {
+    "hash": "a6f18e8f1897523721628c028cb9c210",
+    "last_processed": "2024-12-04T19:24:38.828853",
+    "num_chunks": 9
+  },
+  "course_pdfs\\NETI105 - Network Fundamentals.pdf": {
+    "hash": "67f38f49513ed99f53eaf05ca2c9fe78",
+    "last_processed": "2024-12-04T19:24:38.882545",
+    "num_chunks": 19
+  },
+  "course_pdfs\\NETI109 - Networking I.pdf": {
+    "hash": "5b27c7050c71438c705b84c1e2849dd6",
+    "last_processed": "2024-12-04T19:24:38.937159",
+    "num_chunks": 13
+  },
+  "course_pdfs\\NETI114 - Workforce Preparation CompTIA NetworkPlus Certification.pdf": {
+    "hash": "8afdd908f93b7facf63531157a3538c2",
+    "last_processed": "2024-12-04T19:24:38.964384",
+    "num_chunks": 11
+  },
+  "course_pdfs\\NETI115 - Routing and Switching.pdf": {
+    "hash": "34c1fc09cc78a55d01139ccf929b7ee6",
+    "last_processed": "2024-12-04T19:24:39.047364",
+    "num_chunks": 16
+  },
+  "course_pdfs\\NETI116 - Workforce Preparation Cisco Certified Entry Networking Technician (CCENT) Certification.pdf": {
+    "hash": "90466d2229dd201282640fd501fdfe19",
+    "last_processed": "2024-12-04T19:24:39.073389",
+    "num_chunks": 11
+  },
+  "course_pdfs\\NETI119 - Networking II.pdf": {
+    "hash": "e442bf2e61795438a062de763faed499",
+    "last_processed": "2024-12-04T19:24:39.119714",
+    "num_chunks": 14
+  },
+  "course_pdfs\\NETI120 - Infrastructure Design - Logical and Physical.pdf": {
+    "hash": "7b75c0ff75fd3a0f7299e42fb6c62009",
+    "last_processed": "2024-12-04T19:24:39.145753",
+    "num_chunks": 7
+  },
+  "course_pdfs\\NETI205 - Scaling Networks.pdf": {
+    "hash": "340a099c2e1ae5333159334809d9ecd7",
+    "last_processed": "2024-12-04T19:24:39.173858",
+    "num_chunks": 9
+  },
+  "course_pdfs\\NETI209 - Networking III.pdf": {
+    "hash": "6252935854bc708fb40645a9075eb690",
+    "last_processed": "2024-12-04T19:24:39.218073",
+    "num_chunks": 13
+  },
+  "course_pdfs\\NETI210 - Network Security.pdf": {
+    "hash": "e25ab5875da224e43454bf211c75d71e",
+    "last_processed": "2024-12-04T19:24:39.245613",
+    "num_chunks": 10
+  },
+  "course_pdfs\\NETI215 - Connecting Networks.pdf": {
+    "hash": "b76bf1d6ae32bab0791e89c750122ed4",
+    "last_processed": "2024-12-04T19:24:39.283842",
+    "num_chunks": 9
+  },
+  "course_pdfs\\NETI216 - Workforce Preparation Interconnecting Cisco Networking Devices Part 2 (ICND2) Certification.pdf": {
+    "hash": "4ff9f6c58d25727d651f8563a9ec218e",
+    "last_processed": "2024-12-04T19:24:39.307392",
+    "num_chunks": 11
+  },
+  "course_pdfs\\NETI217 - Workforce Preparation Cisco Certified Network Associate (CCNA) Certification.pdf": {
+    "hash": "d61efe0969487464bdd99d66f8ab4a5c",
+    "last_processed": "2024-12-04T19:24:39.330549",
+    "num_chunks": 11
+  },
+  "course_pdfs\\NETI218 - Cisco Certified Network Associate v7 Bridging Content.pdf": {
+    "hash": "718548c96f7cf56e25a8ea930fa137cf",
+    "last_processed": "2024-12-04T19:24:39.428571",
+    "num_chunks": 14
+  },
+  "course_pdfs\\NETI219 - Workforce Preparation Cisco Certified Network Associate (CCNA) Certification.pdf": {
+    "hash": "d8f6b1c9885a5c576460ad8f168b8ca6",
+    "last_processed": "2024-12-04T19:24:39.459497",
+    "num_chunks": 11
+  },
+  "course_pdfs\\NETI245 - Voice over Internet Protocol.pdf": {
+    "hash": "1dedee0eddd7a4f5eacd883fb6bbf006",
+    "last_processed": "2024-12-04T19:24:39.487185",
+    "num_chunks": 8
+  },
+  "course_pdfs\\NETI250 - Wireless LAN Networking.pdf": {
+    "hash": "f5cb6fb741a8570272e33f859592f60a",
+    "last_processed": "2024-12-04T19:24:39.508326",
+    "num_chunks": 7
+  },
+  "course_pdfs\\SDEV120 - Computing Logic.pdf": {
+    "hash": "dd3da98e63150c3b5b3e761388db7d7d",
+    "last_processed": "2024-12-04T19:24:39.538060",
+    "num_chunks": 11
+  },
+  "course_pdfs\\SDEV140 - Introduction to Software Development.pdf": {
+    "hash": "267c2102b2d91210b142ac2f0cc93a32",
+    "last_processed": "2024-12-04T19:24:39.567119",
+    "num_chunks": 11
+  },
+  "course_pdfs\\SDEV148 - Introduction to Game Development.pdf": {
+    "hash": "6160e2c4ee279a9e7ecc60e9ea87e53f",
+    "last_processed": "2024-12-04T19:24:39.597976",
+    "num_chunks": 8
+  },
+  "course_pdfs\\SDEV153 - Website Development.pdf": {
+    "hash": "29337c4599d6235559413208d3e44eaa",
+    "last_processed": "2024-12-04T19:24:39.627553",
+    "num_chunks": 10
+  },
+  "course_pdfs\\SDEV155 - Content Management Systems.pdf": {
+    "hash": "0b970e266ae8098d34707c6055bb5994",
+    "last_processed": "2024-12-04T19:24:39.657357",
+    "num_chunks": 9
+  },
+  "course_pdfs\\SDEV200 - Software Development Using Java.pdf": {
+    "hash": "8873c4c45ee6cb1e158eaa1455f62979",
+    "last_processed": "2024-12-04T19:24:39.684594",
+    "num_chunks": 12
+  },
+  "course_pdfs\\SDEV210 - Software Development using Visual Basic in the DotNET Framework.pdf": {
+    "hash": "6704d1a7e48b33b2f1d58b2eac5dccd2",
+    "last_processed": "2024-12-04T19:24:39.710741",
+    "num_chunks": 9
+  },
+  "course_pdfs\\SDEV220 - Software Development Using Python.pdf": {
+    "hash": "048860880e27cf1defcdece7b5e8423b",
+    "last_processed": "2024-12-04T19:24:39.780735",
+    "num_chunks": 9
+  },
+  "course_pdfs\\SDEV230 - Software Development Using C++.pdf": {
+    "hash": "759a934cbc34f4450947bb73024ec049",
+    "last_processed": "2024-12-04T19:24:39.813944",
+    "num_chunks": 8
+  },
+  "course_pdfs\\SDEV240 - Software Development Using C#.pdf": {
+    "hash": "f30f511edb7479d7e640642810b227ea",
+    "last_processed": "2024-12-04T19:24:39.842035",
+    "num_chunks": 9
+  },
+  "course_pdfs\\SDEV245 - Security and Secure Coding.pdf": {
+    "hash": "4f7617ab2baf217c35983f65fece40d0",
+    "last_processed": "2024-12-04T19:24:39.885373",
+    "num_chunks": 13
+  },
+  "course_pdfs\\SDEV248 - Advanced Simulation and Game Design.pdf": {
+    "hash": "cc827b8f9e49da143e74413f1dc33611",
+    "last_processed": "2024-12-04T19:24:39.909392",
+    "num_chunks": 9
+  },
+  "course_pdfs\\SDEV250 - Client-Side Scripting Languages and Tools.pdf": {
+    "hash": "ed7573b031e4d891e1848d8c0249ff56",
+    "last_processed": "2024-12-04T19:24:39.933800",
+    "num_chunks": 10
+  },
+  "course_pdfs\\SDEV253 - Server-Side Scripting Languages and Tools.pdf": {
+    "hash": "5ba11459f2493a0427f3411ee8b35b9d",
+    "last_processed": "2024-12-04T19:24:39.968456",
+    "num_chunks": 10
+  },
+  "course_pdfs\\SDEV255 - Web Application Development.pdf": {
+    "hash": "27da3a12e81c3b1e499026bba6645a6a",
+    "last_processed": "2024-12-04T19:24:39.997313",
+    "num_chunks": 9
+  },
+  "course_pdfs\\SDEV257 - Hybrid Apps and Frameworks.pdf": {
+    "hash": "8f8b5b6b6b3c10162a642a6085ec4c29",
+    "last_processed": "2024-12-04T19:24:40.023435",
+    "num_chunks": 10
+  },
+  "course_pdfs\\SDEV260 - iOS Swift Application Development.pdf": {
+    "hash": "6d9854a1a0e78f57bff50d7b1a544052",
+    "last_processed": "2024-12-04T19:24:40.049634",
+    "num_chunks": 10
+  },
+  "course_pdfs\\SDEV264 - Mobile Application Development.pdf": {
+    "hash": "a4a9d7f140249eaa56c2d57bf74851de",
+    "last_processed": "2024-12-04T19:24:40.075748",
+    "num_chunks": 9
+  },
+  "course_pdfs\\SDEV265 - Systems Software Analysis and Projects.pdf": {
+    "hash": "8813e3efd6e1cccb3012c51584025d96",
+    "last_processed": "2024-12-04T19:24:40.179746",
+    "num_chunks": 13
+  },
+  "course_pdfs\\SDEV266 - Advanced iOS Swift Application Development.pdf": {
+    "hash": "fa2538aaf411778d471280c84a5e268a",
+    "last_processed": "2024-12-04T19:24:40.214807",
+    "num_chunks": 9
+  },
+  "course_pdfs\\SDEV268 - Algorithms and Design Patterns.pdf": {
+    "hash": "950c80dab65f373b1b7bae758daa066e",
+    "last_processed": "2024-12-04T19:24:40.244346",
+    "num_chunks": 8
+  },
+  "course_pdfs\\SDEV270 - Workforce Preparation Microsoft Development Fundamentals MTA Certification.pdf": {
+    "hash": "c0d085c02f27e927c302121b4e3fac70",
+    "last_processed": "2024-12-04T19:24:40.291093",
+    "num_chunks": 12
+  },
+  "course_pdfs\\SDEV271 - Workforce Preparation Java Foundations Certification.pdf": {
+    "hash": "631f39123cc6c367e12a3363dc1df29f",
+    "last_processed": "2024-12-04T19:24:40.317199",
+    "num_chunks": 11
+  },
+  "course_pdfs\\SDEV272 - Workforce Preparation Python.pdf": {
+    "hash": "7a746a5f0dc92930afb516f1a951e0ef",
+    "last_processed": "2024-12-04T19:24:40.348811",
+    "num_chunks": 11
+  },
+  "course_pdfs\\SDEV273 - Workforce Preparation C++ Ins.pdf": {
+    "hash": "9ebe34453d2a48bbc91aea2d9ba566a2",
+    "last_processed": "2024-12-04T19:24:40.371739",
+    "num_chunks": 11
+  },
+  "course_pdfs\\SDEV274 - Workforce Preparation Microsoft C# Jump Start Certification.pdf": {
+    "hash": "7bf03fda3295444bd90a4c357d810221",
+    "last_processed": "2024-12-04T19:24:40.385874",
+    "num_chunks": 6
+  },
+  "course_pdfs\\SDEV275 - Workforce Preparation MTA 98-375 HTML5 Fundamentals Certification.pdf": {
+    "hash": "6fd08345235a25a5de7e282662aa0181",
+    "last_processed": "2024-12-04T19:24:40.428346",
+    "num_chunks": 11
+  },
+  "course_pdfs\\SDEV276 - Workforce Preparation ATC Android Application Development Certification.pdf": {
+    "hash": "2d9b861799066887839041cc949a0e53",
+    "last_processed": "2024-12-04T19:24:40.453870",
+    "num_chunks": 11
+  },
+  "course_pdfs\\SVAD111 - Linux and Virtualization Tech.pdf": {
+    "hash": "094bb1645cf3caebdeb948152430419e",
+    "last_processed": "2024-12-04T19:24:40.488737",
+    "num_chunks": 9
+  },
+  "course_pdfs\\SVAD116 - Linux Administration I.pdf": {
+    "hash": "e37e52741469d1ed939d57a9f1ad8262",
+    "last_processed": "2024-12-04T19:24:40.525955",
+    "num_chunks": 16
+  },
+  "course_pdfs\\SVAD117 - Workforce Preparation CompTIA Linux+ Certification.pdf": {
+    "hash": "5cc07f9e4456193e6674e4d6a24ee277",
+    "last_processed": "2024-12-04T19:24:40.549106",
+    "num_chunks": 11
+  },
+  "course_pdfs\\SVAD121 - Enterprise Computing.pdf": {
+    "hash": "1eaa40cd5ea6d299d77f037eccefc534",
+    "last_processed": "2024-12-04T19:24:40.625591",
+    "num_chunks": 16
+  },
+  "course_pdfs\\SVAD124 - RedHat System Administration I.pdf": {
+    "hash": "7c10912473e5acfc392b8c97fd6be004",
+    "last_processed": "2024-12-04T19:24:40.658223",
+    "num_chunks": 7
+  },
+  "course_pdfs\\SVAD134 - RedHat System Administration II.pdf": {
+    "hash": "ddb8f62c498de45873e3d886b3b22f0d",
+    "last_processed": "2024-12-04T19:24:40.682855",
+    "num_chunks": 7
+  },
+  "course_pdfs\\SVAD150 - Cloud Foundations.pdf": {
+    "hash": "bd1c84a4c900b49bf1a80e76a3050533",
+    "last_processed": "2024-12-04T19:24:40.706407",
+    "num_chunks": 7
+  },
+  "course_pdfs\\SVAD151 - Workforce Preparation AWS Cloud Practitioner.pdf": {
+    "hash": "4bc7cf3fb0958d70bc82544713b54e25",
+    "last_processed": "2024-12-04T19:24:40.727549",
+    "num_chunks": 5
+  },
+  "course_pdfs\\SVAD152 - Workforce Preparation - CompTIA Cloud+ Certification.pdf": {
+    "hash": "2e523a91b9bdbc3aca7417e656c62706",
+    "last_processed": "2024-12-04T19:24:40.741058",
+    "num_chunks": 5
+  },
+  "course_pdfs\\SVAD153 - Workforce Preparation - Azure Fundamentals.pdf": {
+    "hash": "226b18e64ec89aee49843b549b639057",
+    "last_processed": "2024-12-04T19:24:40.754668",
+    "num_chunks": 5
+  },
+  "course_pdfs\\SVAD170 - Monitoring and Issue Resolutions.pdf": {
+    "hash": "0fdd2ccd0f4d8c7bc245e41119589589",
+    "last_processed": "2024-12-04T19:24:40.780811",
+    "num_chunks": 8
+  },
+  "course_pdfs\\SVAD211 - Virtualization and Storage.pdf": {
+    "hash": "30938ca86cd0f45890da835e50defa97",
+    "last_processed": "2024-12-04T19:24:40.807484",
+    "num_chunks": 6
+  },
+  "course_pdfs\\SVAD216 - Linux Administration II.pdf": {
+    "hash": "8de25b0b5733ea52bc54c2b9588c65e5",
+    "last_processed": "2024-12-04T19:24:40.840620",
+    "num_chunks": 8
+  },
+  "course_pdfs\\SVAD217 - Workforce Preparation RHCSA Certification.pdf": {
+    "hash": "dd2ea5864394025a27d113dfaaa82c53",
+    "last_processed": "2024-12-04T19:24:40.868306",
+    "num_chunks": 11
+  },
+  "course_pdfs\\SVAD220 - Solutions Architect Associate.pdf": {
+    "hash": "255dc71278736e38b8c9ca2f67026394",
+    "last_processed": "2024-12-04T19:24:40.899623",
+    "num_chunks": 9
+  },
+  "course_pdfs\\SVAD221 - Workforce Preparation Solutions Architect Associate Certification.pdf": {
+    "hash": "97f49cafe979bcf4b260ae7491cb4316",
+    "last_processed": "2024-12-04T19:24:40.925655",
+    "num_chunks": 11
+  },
+  "course_pdfs\\SVAD224 - RedHat System Administration III.pdf": {
+    "hash": "bb025b984d56930439777c120f1bad2b",
+    "last_processed": "2024-12-04T19:24:40.953321",
+    "num_chunks": 10
+  },
+  "course_pdfs\\SVAD225 - Workforce Preparation RedHat Certified Systems Administrator Certification.pdf": {
+    "hash": "ec746698fd64871bd1ddb4a2af72ff73",
+    "last_processed": "2024-12-04T19:24:41.023109",
+    "num_chunks": 11
+  },
+  "course_pdfs\\SVAD230 - Hybrid Systems.pdf": {
+    "hash": "cbd7bcd32ebddee8253bd396aebc5db7",
+    "last_processed": "2024-12-04T19:24:41.053801",
+    "num_chunks": 7
+  },
+  "course_pdfs\\SVAD231 - Microsoft Server Administration I.pdf": {
+    "hash": "e3f32532eefe167c8e269e2ffbab769a",
+    "last_processed": "2024-12-04T19:24:41.080812",
+    "num_chunks": 7
+  },
+  "course_pdfs\\SVAD232 - Workforce Preparation Microsoft 70-740 Certification.pdf": {
+    "hash": "b458e46d2d70eda77edd9e276d0b315a",
+    "last_processed": "2024-12-04T19:24:41.115512",
+    "num_chunks": 11
+  },
+  "course_pdfs\\SVAD236 - Microsoft Server Administration II.pdf": {
+    "hash": "d660c949030baf7709c2480f36362639",
+    "last_processed": "2024-12-04T19:24:41.141818",
+    "num_chunks": 10
+  },
+  "course_pdfs\\SVAD237 - Workforce Preparation Microsoft 70-741 Certification.pdf": {
+    "hash": "87fd53f00eee16fa530852bf2fc05da7",
+    "last_processed": "2024-12-04T19:24:41.177903",
+    "num_chunks": 11
+  },
+  "course_pdfs\\SVAD241 - Microsoft Server Administration III.pdf": {
+    "hash": "322adf4b7f9e8b019fb6639ed15a9153",
+    "last_processed": "2024-12-04T19:24:41.211252",
+    "num_chunks": 6
+  },
+  "course_pdfs\\SVAD242 - Workforce Preparation Microsoft 70-742 Certification.pdf": {
+    "hash": "ddf12fad943b4d7d46578217b7850ace",
+    "last_processed": "2024-12-04T19:24:41.244293",
+    "num_chunks": 11
+  },
+  "course_pdfs\\SVAD246 - Microsoft Server Administration IV.pdf": {
+    "hash": "77c360fe4e2209ce7249f4f39dbaa83a",
+    "last_processed": "2024-12-04T19:24:41.289631",
+    "num_chunks": 15
+  },
+  "course_pdfs\\SVAD247 - Workforce Preparation Microsoft 70-413 Certification.pdf": {
+    "hash": "652e9b58cabde0b0b7ae44755b895adf",
+    "last_processed": "2024-12-04T19:24:41.311878",
+    "num_chunks": 11
+  },
+  "course_pdfs\\SVAD250 - Linux Administration III.pdf": {
+    "hash": "0c2789440b8e322799154ecd67f97d41",
+    "last_processed": "2024-12-04T19:24:41.336909",
+    "num_chunks": 8
+  },
+  "course_pdfs\\SVAD252 - Workforce Preparation LPIC II-202 Certification.pdf": {
+    "hash": "b00b800235732f7de3de91179f954f91",
+    "last_processed": "2024-12-04T19:24:41.359843",
+    "num_chunks": 11
+  },
+  "course_pdfs\\SVAD257 - Workforce Preparation Microsoft 70-414 Certification.pdf": {
+    "hash": "2a831bdefc7fb7c0a6c26f889b552111",
+    "last_processed": "2024-12-04T19:24:41.423176",
+    "num_chunks": 11
+  },
+  "course_pdfs\\SVAD260 - Systems Automation and Orchestration.pdf": {
+    "hash": "9201e54357e619e920622baffe017ec5",
+    "last_processed": "2024-12-04T19:24:41.440333",
+    "num_chunks": 7
+  },
+  "course_pdfs\\SVAD265 - Azure Services and Technology.pdf": {
+    "hash": "bac2cd81b83c5ab006b721410ec91d3d",
+    "last_processed": "2024-12-04T19:24:41.461983",
+    "num_chunks": 6
+  },
+  "course_pdfs\\SVAD266 - Workforce Preparation Microsoft Azure Administrator.pdf": {
+    "hash": "b4c579c25db6f934075def42122a04b2",
+    "last_processed": "2024-12-04T19:24:41.475006",
+    "num_chunks": 5
+  }
+}

@@ -1,14 +1,12 @@
 # IVY Tech Chat Bot
 
-- image of program running.
+![](screenshots/app_in_use.png)
 
 ## Table of Contents
 
 [Install Instructions](#installation)
 
 [How to use](#how-to-use)
-
-
 
 ## Installation
 
@@ -76,22 +74,8 @@ python pdf_vectorizer.py
 python main.py
 ```
 
-### 4. Open Web Browser
+### 4. Access Program in Web Browser
+
+Click this link to go to it.
 
 [localhost:5000](http://127.0.0.1:5000)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

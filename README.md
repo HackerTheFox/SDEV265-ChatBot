@@ -4,9 +4,9 @@
 
 ## Table of Contents
 
-[Install Instructions]:(Installation)
+[Install Instructions](#installation)
 
-[How to use]:(how-to-use)
+[How to use](#how-to-use)
 
 
 
@@ -78,7 +78,7 @@ python main.py
 
 ### 4. Open Web Browser
 
-[localhost:5000]:(localhost:5000)
+[localhost:5000](http://127.0.0.1:5000)
 
 
 

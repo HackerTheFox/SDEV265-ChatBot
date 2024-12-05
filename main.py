@@ -12,8 +12,14 @@ from langchain_community.vectorstores import FAISS
 from langchain_openai import OpenAI as LangchainOpenAI
 from langchain_openai import OpenAIEmbeddings
 
+
+
+# Grab api key from file.
+with open("api_key.txt", 'r') as f:
+    OPENAI_API_KEY = f.read().strip('\n')
+
 # Configuration
-OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
+os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
 openai.api_key = OPENAI_API_KEY
 
 
@@ -29,6 +35,7 @@ class PDFChatbot:
         self.storage_directory = Path(storage_directory)
         self.vectorstore_path = self.storage_directory / "vectorstore"
         self.chat_history_path = self.storage_directory / "chat_history"
+
 
         # Ensure directories exist
         self.chat_history_path.mkdir(parents=True, exist_ok=True)

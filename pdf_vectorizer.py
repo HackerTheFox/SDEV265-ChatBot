@@ -8,6 +8,7 @@ import json
 from pathlib import Path
 from tqdm import tqdm
 import hashlib
+import openai
 
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_openai import OpenAIEmbeddings
@@ -16,7 +17,12 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.docstore.document import Document
 
 
-OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
+# SETUP API KEY: Grab api key from file.
+with open("api_key.txt", 'r') as f:
+    OPENAI_API_KEY = f.read().strip('\n')
+
+os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
+openai.api_key = OPENAI_API_KEY
 
 
 class PDFProcessingSystem:

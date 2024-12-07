@@ -64,7 +64,7 @@ pip install -r requirements.txt
 
 ### 2.  Add PDF's and Generate Vector Files from .pdf's
 
-1. Go to the course_pdfs directory and all necessary pdfs for data. The directory comes with
+1. Go to the course_pdfs directory and add all necessary pdfs for data. The directory comes with
    some course pdfs already more can be added and removed as per the user. 
 
 Run The Following command

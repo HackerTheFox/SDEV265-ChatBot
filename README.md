@@ -62,7 +62,11 @@ pip install -r requirements.txt
    └───
    ```
 
-### 2. Generate Vector Files from .pdf's
+### 2.  Add PDF's and Generate Vector Files from .pdf's
+
+1. Go to the course_pdf
+
+
 
 ```bash
 python pdf_vectorizer.py

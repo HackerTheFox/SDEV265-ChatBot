@@ -1,101 +1,3 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>PDF Chatbot</title>-->
-<!--    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>-->
-<!--    <style>-->
-<!--        /* Previous CSS remains the same */-->
-<!--    </style>-->
-<!--</head>-->
-<!--<body>-->
-<!--    <h1>PDF Chatbot</h1>-->
-<!--    <input type="hidden" id="session-id" value="{{ session_id }}">-->
-<!--    <div id="chat-container">-->
-<!--        <div id="chat-messages"></div>-->
-<!--        <div id="user-input">-->
-<!--            <input type="text" id="message" placeholder="Type your message...">-->
-<!--            <button onclick="sendMessage()">Send</button>-->
-<!--            <button onclick="clearHistory()">Clear History</button>-->
-<!--        </div>-->
-<!--    </div>-->
-
-<!--    <script>-->
-<!--        // function sendMessage() {-->
-<!--        //     const messageInput = document.getElementById('message');-->
-<!--        //     const chatMessages = document.getElementById('chat-messages');-->
-<!--        //     const userMessage = messageInput.value.trim();-->
-<!--        //-->
-<!--        //     if (!userMessage) return;-->
-<!--        //-->
-<!--        //     // Display user message-->
-<!--        //     const userMessageEl = document.createElement('div');-->
-<!--        //     userMessageEl.className = 'message user-message';-->
-<!--        //     userMessageEl.textContent = userMessage;-->
-<!--        //     chatMessages.appendChild(userMessageEl);-->
-<!--        //-->
-<!--        //     // Clear input-->
-<!--        //     messageInput.value = '';-->
-<!--        //-->
-<!--        //     // Send to backend-->
-<!--        //     axios.post('/chat', {-->
-<!--        //         message: userMessage,-->
-<!--        //         session_id: document.getElementById('session-id').value-->
-<!--        //     })-->
-<!--        //     .then(response => {-->
-<!--        //         const botMessageEl = document.createElement('div');-->
-<!--        //         botMessageEl.className = 'message bot-message';-->
-<!--        //         botMessageEl.textContent = response.data.message;-->
-<!--        //-->
-<!--        //         // Add sources if available-->
-<!--        //         if (response.data.sources && response.data.sources.length > 0) {-->
-<!--        //             const sourcesEl = document.createElement('div');-->
-<!--        //             sourcesEl.className = 'sources';-->
-<!--        //             sourcesEl.innerHTML = '<strong>Sources:</strong><br>' +-->
-<!--        //                 response.data.sources.map(source =>-->
-<!--        //                     `${source.file} (Page ${source.page})`-->
-<!--        //                 ).join('<br>');-->
-<!--        //             botMessageEl.appendChild(sourcesEl);-->
-<!--        //         }-->
-<!--        //-->
-<!--        //         chatMessages.appendChild(botMessageEl);-->
-<!--        //         chatMessages.scrollTop = chatMessages.scrollHeight;-->
-<!--        //     })-->
-<!--        //     .catch(error => {-->
-<!--        //         const errorMessageEl = document.createElement('div');-->
-<!--        //         errorMessageEl.className = 'message bot-message';-->
-<!--        //         errorMessageEl.textContent = 'Error: Unable to send message';-->
-<!--        //         chatMessages.appendChild(errorMessageEl);-->
-<!--        //     });-->
-<!--        // }-->
-<!--        //-->
-<!--        // function clearHistory() {-->
-<!--        //     axios.post('/clear_history')-->
-<!--        //     .then(response => {-->
-<!--        //         const chatMessages = document.getElementById('chat-messages');-->
-<!--        //         chatMessages.innerHTML = '';-->
-<!--        //-->
-<!--        //         // Update session ID-->
-<!--        //         if (response.data.session_id) {-->
-<!--        //             document.getElementById('session-id').value = response.data.session_id;-->
-<!--        //         }-->
-<!--        //     })-->
-<!--        //     .catch(error => {-->
-<!--        //         console.error('Error clearing history:', error);-->
-<!--        //     });-->
-<!--        // }-->
-<!--        //-->
-<!--        // // Allow sending message with Enter key-->
-<!--        // document.getElementById('message').addEventListener('keypress', function(e) {-->
-<!--        //     if (e.key === 'Enter') {-->
-<!--        //         sendMessage();-->
-<!--        //     }-->
-<!--        // });-->
-<!--    </script>-->
-<!--</body>-->
-<!--</html>-->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -276,67 +178,91 @@
         #clear-history:hover {
             background-color: #d32f2f;
         }
+
+        .message.bot-message {
+            white-space: pre-wrap; /* Preserve whitespace and wrapping */
+            word-wrap: break-word; /* Break long words */
+            overflow-wrap: break-word; /* Ensure words break */
+            max-width: 100%; /* Ensure message doesn't exceed container */
+        }
+
+        pre.message.bot-message {
+            font-family: Arial, sans-serif; /* Match the regular font */
+            white-space: pre-wrap; /* Preserve whitespace and wrapping */
+            word-wrap: break-word; /* Break long words */
+            overflow-wrap: break-word; /* Ensure words break */
+            max-width: 100%; /* Ensure message doesn't exceed container */
+        }
+
+        .chat-messages {
+            height: 400px;
+            overflow-y: auto;
+            padding: 1rem;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="https://www.ivytech.edu/content/img/logos/ivy-tech-horiz-white@2x.png" alt="Ivy Tech Community College" class="logo">
+<header>
+    <div class="header-content">
+        <img src="https://www.ivytech.edu/content/img/logos/ivy-tech-horiz-white@2x.png"
+             alt="Ivy Tech Community College" class="logo">
+    </div>
+</header>
+
+<main>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="chat-avatar">Ivy</div>
+            <div class="chat-title">
+                <h2>Chat Bot</h2>
+                <p>Always here to help</p>
+            </div>
         </div>
-    </header>
-
-    <main>
-        <div class="chat-container">
-            <div class="chat-header">
-                <div class="chat-avatar">Ivy</div>
-                <div class="chat-title">
-                    <h2>Chat Bot</h2>
-                    <p>Always here to help</p>
-                </div>
-            </div>
-            <div class="chat-messages" id="chat-messages">
-                <!-- Messages will be dynamically added here -->
-            </div>
-            <div class="chat-input">
-                <input type="text" id="message" placeholder="Type your message..." aria-label="Type your message">
-                <button onclick="sendMessage()" aria-label="Send message">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="22" y1="2" x2="11" y2="13"></line>
-                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                    </svg>
-                </button>
-            </div>
-            <button id="clear-history" onclick="clearHistory()">Clear History</button>
-            <p class="powered-by">Powered by Team Green</p>
+        <div class="chat-messages" id="chat-messages">
+            <!-- Messages will be dynamically added here -->
         </div>
-    </main>
+        <div class="chat-input">
+            <input type="text" id="message" placeholder="Type your message..." aria-label="Type your message">
+            <button onclick="sendMessage()" aria-label="Send message">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </div>
+        <button id="clear-history" onclick="clearHistory()">Clear History</button>
+        <p class="powered-by">Powered by Team Green</p>
+    </div>
+</main>
 
-    <input type="hidden" id="session-id" value="{{ session_id }}">
+<input type="hidden" id="session-id" value="{{ session_id }}">
 
-    <script>
-        function sendMessage() {
-            const messageInput = document.getElementById('message');
-            const chatMessages = document.getElementById('chat-messages');
-            const userMessage = messageInput.value.trim();
+<script>
+    function sendMessage() {
+        const messageInput = document.getElementById('message');
+        const chatMessages = document.getElementById('chat-messages');
+        const userMessage = messageInput.value.trim();
 
-            if (!userMessage) return;
+        if (!userMessage) return;
 
-            // Display user message
-            const userMessageEl = document.createElement('div');
-            userMessageEl.className = 'message user-message';
-            userMessageEl.textContent = userMessage;
-            chatMessages.appendChild(userMessageEl);
+        // Display user message
+        const userMessageEl = document.createElement('div');
+        userMessageEl.className = 'message user-message';
+        userMessageEl.textContent = userMessage;
+        chatMessages.appendChild(userMessageEl);
 
-            // Clear input
-            messageInput.value = '';
+        // Clear input
+        messageInput.value = '';
 
-            // Send to backend
-            axios.post('/chat', {
-                message: userMessage,
-                session_id: document.getElementById('session-id').value
-            })
+        // Send to backend
+        axios.post('/chat', {
+            message: userMessage,
+            session_id: document.getElementById('session-id').value
+        })
             .then(response => {
-                const botMessageEl = document.createElement('div');
+                const botMessageEl = document.createElement('pre');
                 botMessageEl.className = 'message bot-message';
                 botMessageEl.textContent = response.data.message;
 
@@ -360,10 +286,10 @@
                 errorMessageEl.textContent = 'Error: Unable to send message';
                 chatMessages.appendChild(errorMessageEl);
             });
-        }
+    }
 
-        function clearHistory() {
-            axios.post('/clear_history')
+    function clearHistory() {
+        axios.post('/clear_history')
             .then(response => {
                 const chatMessages = document.getElementById('chat-messages');
                 chatMessages.innerHTML = '';
@@ -376,17 +302,16 @@
             .catch(error => {
                 console.error('Error clearing history:', error);
             });
-        }
+    }
 
-        // Allow sending message with Enter key
-        document.getElementById('message').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                sendMessage();
-            }
-        });
-    </script>
+    // Allow sending message with Enter key
+    document.getElementById('message').addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+            sendMessage();
+        }
+    });
+</script>
 </body>
 </html>
-
 
 
